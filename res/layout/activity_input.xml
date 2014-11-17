@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <EditText
+        android:id="@+id/phraseTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameTextField"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:hint="phrase" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/transferButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="51dp"
+        android:text="@string/transfertext" />
+
+    <EditText
+        android:id="@+id/ageTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameTextField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="age" />
+
+    <EditText
+        android:id="@+id/nameTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ageTextField"
+        android:layout_below="@+id/phraseTextField"
+        android:layout_marginTop="41dp"
+        android:ems="10"
+        android:hint="name" />
+
+    <EditText
+        android:id="@+id/blatherField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ageTextField"
+        android:layout_below="@+id/ageTextField"
+        android:layout_marginTop="46dp"
+        android:ems="10"
+        android:hint="blather" />
+
+</RelativeLayout>
